@@ -8,7 +8,7 @@ body {
   background: linear-gradient(
       to right,
       rgba(105, 57, 1, 0.596),
-      rgba(8, 114, 117, 0.616),
+      rgba(210, 250, 252, 0.616),
       rgba(68, 0, 23, 0.774)
     ),
     url("../Images/Backgrounds/bg4.jpeg") center;
@@ -40,10 +40,23 @@ body {
   left: 0;
   width: 50%;
   height: 100%;
-  background: rgba(6, 20, 20, 0.39);
+  transform: skew(-30deg);
+  background: rgba(32, 1, 90, 0.39);
   border-radius: 10px;
   pointer-events: none;
 }
+.form::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transform: skew(30deg);
+    background: rgba(1, 129, 129, 0.39);
+    border-radius: 10px;
+    pointer-events: none;
+  }
 .form img {
   position: absolute;
   top: -50px;
